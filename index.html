@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Prithvi Raj Sanotiya</title>
-    <meta name="description" content="Personal website of Prithvi Raj Sanotiya. Creator, developer, and founder of SpineAssociation." />
-<meta name="keywords" content="Prithvi Raj Sanotiya, Developer, Creator, SpineAssociation, Project Manager" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Prithvi Raj Sanotiya</title>
+<meta name="description" content="Personal website of Prithvi Raj Sanotiya. Creator, developer, and founder of SpineAssociation." />
+<meta name="keywords" content="Prithvi Raj Sanotiya, Developer, Creator, SpineAssociation" />
 <meta name="author" content="Prithvi Raj Sanotiya" />
 <link rel="canonical" href="https://prithvirajsanotiya.github.io/" />
 
@@ -15,149 +15,242 @@
 <meta property="og:description" content="Personal website and project directory by Prithvi Raj Sanotiya." />
 <meta property="og:image" content="https://prithvirajsanotiya.github.io/logo.png" />
 <meta property="og:url" content="https://prithvirajsanotiya.github.io/" />
-<meta name="google-site-verification" content="STki-Cb0FIxd9O1Rz-3uG9lsFwrOJBimOAUhcjdFoXw" />
 <meta name="twitter:card" content="summary_large_image" />
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Prithvi Raj Sanotiya",
-      "url": "https://prithvirajsanotiya.github.io/",
-      "logo": "https://prithvirajsanotiya.github.io/logo.png",
-      "image": "https://prithvirajsanotiya.github.io/logo.png",
-      "jobTitle": "Digital Creator",
-      "sameAs": [
-        "http://spineassociation.rf.gd/",
-        "https://m.youtube.com/@PrithviRajSanotiya",
-        "https://m.youtube.com/@SpineAssociation",
-        "https://instagram.com/PrithviRajSanotiya",
-        "https://instagram.com/SpineAssociation",
-        "https://GitHub.com/SpineAssociation",
-        "https://x.com/SpineAssoc"
-      ]
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Prithvi Raj Sanotiya",
+  "url": "https://prithvirajsanotiya.github.io/",
+  "image": "https://prithvirajsanotiya.github.io/logo.png",
+  "jobTitle": "Digital Creator",
+  "sameAs": [
+    "http://spineassociation.rf.gd/",
+    "https://github.com/SpineAssociation",
+    "https://instagram.com/PrithviRajSanotiya",
+    "https://instagram.com/SpineAssociation",
+    "https://m.youtube.com/@PrithviRajSanotiya",
+    "https://m.youtube.com/@SpineAssociation",
+    "https://x.com/SpineAssoc"
+  ]
+}
+</script>
+
+<style>
+:root {
+    --bg: #ffffff;
+    --text: #111;
+    --muted: #666;
+    --border: #eee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: -0.4px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* HERO */
+header {
+    max-width: 900px;
+    padding: 100px 8% 60px;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-weight: 800;
+    letter-spacing: -2px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 1.25rem;
+    color: var(--muted);
+    max-width: 600px;
+    margin-bottom: 36px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 999px;
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform .2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 60px 8%;
+}
+
+.card {
+    padding: 28px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: .25s;
+}
+
+.card:hover {
+    border-color: #000;
+    background: #fafafa;
+}
+
+.card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+}
+
+.card p {
+    font-size: .95rem;
+    color: var(--muted);
+}
+
+/* FOOTER */
+footer {
+    border-top: 1px solid var(--border);
+    padding: 40px 8%;
+    text-align: center;
+    font-size: .85rem;
+    color: var(--muted);
+}
+
+.footer-socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.footer-socials a {
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-socials a:hover {
+    color: #000;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    nav, header, .grid, footer {
+        padding-left: 5%;
+        padding-right: 5%;
     }
-    </script>
 
-    <style>
-        /* 4. RESPONSIVE MODERN DESIGN */
-        :root {
-            --bg: #ffffff;
-            --text: #1a1a1a;
-            --muted: #666;
-            --border: #f0f0f0;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
-
-        /* Navbar: Responsive Flex */
-        nav { 
-            padding: 20px 8%; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            border-bottom: 1px solid var(--border);
-            position: sticky;
-            top: 0;
-            background: rgba(255,255,255,0.9);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-        }
-        .logo-text { font-weight: 800; font-size: 1.1rem; letter-spacing: -0.5px; }
-
-        /* Hero: Responsive Sizing */
-        header { padding: 100px 8% 60px; max-width: 900px; }
-        h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 800; letter-spacing: -2px; line-height: 1; margin-bottom: 20px; }
-        .tagline { font-size: 1.25rem; color: var(--muted); margin-bottom: 35px; }
-
-        /* Buttons & Links */
-        .btn { 
-            display: inline-block; 
-            padding: 14px 28px; 
-            background: #000; 
-            color: #fff; 
-            text-decoration: none; 
-            border-radius: 50px; 
-            font-weight: 600; 
-            transition: 0.3s;
-        }
-        .btn:hover { transform: scale(1.05); }
-
-        /* Link Grid: Mobile 1 column, PC 2+ columns */
-        .grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 20px; 
-            padding: 60px 8%; 
-        }
-        .card { 
-            padding: 30px; 
-            border: 1px solid var(--border); 
-            border-radius: 16px; 
-            text-decoration: none; 
-            color: inherit; 
-            transition: 0.3s;
-        }
-        .card:hover { background: #fafafa; border-color: #000; }
-        .card h3 { font-size: 1.2rem; margin-bottom: 8px; }
-        .card p { font-size: 0.95rem; color: var(--muted); }
-
-        footer { padding: 40px; text-align: center; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--border); }
-
-        /* Mobile specific adjustments */
-        @media (max-width: 600px) {
-            nav { padding: 15px 5%; }
-            header { padding: 60px 5%; }
-            .grid { padding: 40px 5%; }
-        }
-    </style>
+    header {
+        padding-top: 60px;
+    }
+}
+</style>
 </head>
+
 <body>
 
-    <nav>
-        <div class="logo-text">PRITHVI RAJ SANOTIYA</div>
-        <div class="nav-links">
-            <a href="http://spineassociation.rf.gd/" style="text-decoration:none; color:#000; font-weight:600; font-size:0.9rem;">My Work</a>
-        </div>
-    </nav>
+<nav>
+    <div class="logo">PRITHVI RAJ SANOTIYA</div>
+    <a href="http://spineassociation.rf.gd/">My Work</a>
+</nav>
 
-    <header>
-        <h1>Prithvi Raj Sanotiya</h1>
-        <p class="tagline">I build things for the web and manage digital projects. This is my central hub for code and creative work.</p>
-        <a href="http://spineassociation.rf.gd/" class="btn">Visit SpineAssociation</a>
-    </header>
+<header>
+    <h1>Prithvi Raj Sanotiya</h1>
+    <p class="tagline">
+        I build things for the web and manage digital projects.
+        This is my central hub for code and creative work.
+    </p>
+    <a href="http://spineassociation.rf.gd/" class="btn">Visit SpineAssociation</a>
+</header>
 
-    <main class="grid">
-        <a href="https://m.youtube.com/@PrithviRajSanotiya" class="card" target="_blank">
-            <h3>YouTube</h3>
-            <p>Personal channel for updates and insights.</p>
-        </a>
-        <a href="https://GitHub.com/SpineAssociation" class="card" target="_blank">
-            <h3>GitHub</h3>
-            <p>Code repositories and technical work.</p>
-        </a>
-        <a href="https://instagram.com/PrithviRajSanotiya" class="card" target="_blank">
-            <h3>Instagram</h3>
-            <p>Visual logs and personal updates.</p>
-        </a>
-        <a href="https://x.com/SpineAssoc" class="card" target="_blank">
-            <h3>X / Twitter</h3>
-            <p>Quick news and public notes.</p>
-        </a>
-        <a href="https://m.youtube.com/@SpineAssociation" class="card" target="_blank">
-            <h3>SpineAssociation YouTube</h3>
-            <p>Video documentation for specific projects.</p>
-        </a>
-        <a href="https://instagram.com/SpineAssociation" class="card" target="_blank">
-            <h3>SpineAssociation Instagram</h3>
-            <p>Visual design and project showcase.</p>
-        </a>
-    </main>
+<main class="grid">
+    <a href="https://github.com/SpineAssociation" class="card" target="_blank">
+        <h3>GitHub</h3>
+        <p>Code repositories and development work.</p>
+    </a>
 
-    <footer>
-        © 2026 Prithvi Raj Sanotiya
-    </footer>
+    <a href="https://m.youtube.com/@PrithviRajSanotiya" class="card" target="_blank">
+        <h3>YouTube</h3>
+        <p>Personal updates and insights.</p>
+    </a>
+
+    <a href="https://instagram.com/PrithviRajSanotiya" class="card" target="_blank">
+        <h3>Instagram</h3>
+        <p>Personal visuals and updates.</p>
+    </a>
+
+    <a href="https://x.com/SpineAssoc" class="card" target="_blank">
+        <h3>X / Twitter</h3>
+        <p>Announcements and public notes.</p>
+    </a>
+
+    <a href="https://m.youtube.com/@SpineAssociation" class="card" target="_blank">
+        <h3>SpineAssociation YouTube</h3>
+        <p>Project documentation and videos.</p>
+    </a>
+
+    <a href="https://instagram.com/SpineAssociation" class="card" target="_blank">
+        <h3>SpineAssociation Instagram</h3>
+        <p>Design and project showcase.</p>
+    </a>
+</main>
+
+<footer>
+    <div class="footer-socials">
+        <a href="https://github.com/SpineAssociation">GitHub</a>
+        <a href="https://m.youtube.com/@PrithviRajSanotiya">YouTube</a>
+        <a href="https://instagram.com/PrithviRajSanotiya">Instagram</a>
+        <a href="https://x.com/SpineAssoc">X</a>
+    </div>
+    © 2026 Prithvi Raj Sanotiya
+</footer>
 
 </body>
-  </html>
+</html>
