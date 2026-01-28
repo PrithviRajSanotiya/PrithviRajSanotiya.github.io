@@ -1,0 +1,60 @@
+# ==============================
+# Robots.txt for PrithviRajSanotiya.github.io
+# Last Updated: 28 Jan 2026
+# Purpose: Control search engine crawler access
+# ==============================
+
+# ==============================
+# Global Rules for All Crawlers
+# ==============================
+User-agent: *
+# Block hidden files and sensitive folders
+Disallow: /assets/private/
+Disallow: /scripts/
+Disallow: /config/
+Disallow: /node_modules/
+Disallow: /backup/
+
+# Allow public folders
+Allow: /assets/images/
+Allow: /assets/css/
+Allow: /assets/js/
+
+# Block specific file types that are not useful for indexing
+Disallow: /*.env$
+Disallow: /*.json$
+Disallow: /*.log$
+
+# ==============================
+# Sitemap (optional but recommended)
+# ==============================
+Sitemap: https://PrithviRajSanotiya.github.io/sitemap.xml
+
+# ==============================
+# Specific Bot Rules
+# ==============================
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Baidu - block completely
+User-agent: Baiduspider
+Disallow: /
+
+# Other unwanted bots
+User-agent: *
+Disallow: /private/
+Disallow: /tmp/
+
+# ==============================
+# Notes:
+# - Keep sensitive directories disallowed to prevent leaks
+# - Allow indexing of public content to improve visibility
+# - Update sitemap.xml whenever new pages are added
+# - GitHub Pages automatically ignores .git and .github folders
+# ==============================
+
